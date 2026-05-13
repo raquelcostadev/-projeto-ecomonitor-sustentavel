@@ -1,16 +1,3 @@
-* {
-   margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background-color: #f0f4f8; 
-    color: #333;
-    padding: 40px 20px;
-}
-
 .navegacao-inicio {
 display: flex;
 align-items: center;
@@ -29,8 +16,44 @@ cursor: pointer;
 .navegacao-inicio a:hover{
 color: wheat;
 }
-/* erika ate aqui*/
+form{
+text-align: center;
+font-weight: bold;
+}
+label{
+font-size: 18px;
+}
 
+input{
+width: 60px;
+height: 30px;
+text-align: center;
+}
+#btn-enviar{
+    background-color: #f1c40f;
+  
+    border-radius: 5px;
+   
+    width: 70px; 
+    height: 30px;
+   
+    transition: transform 0.3s ease;
+    border: 1px solid #e1e8ed;
+
+}
+/* erika ate aqui*/
+* {
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8; 
+    color: #333;
+    padding: 40px 20px;
+}
 
 header {
     text-align: center;
