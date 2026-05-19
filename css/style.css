@@ -1,10 +1,12 @@
+
+
 .navegacao-inicio {
 display: flex;
 align-items: center;
 justify-content: space-around;
 background: #3498db;
 margin-bottom: 50px;
-
+flex-wrap: wrap;
 }
 .navegacao-inicio a{
 color: aliceblue;

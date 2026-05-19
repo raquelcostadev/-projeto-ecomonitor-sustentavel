@@ -1,41 +1,40 @@
 const inputs = document.querySelectorAll(".valores")
 const paragrafos = document.querySelectorAll(".paragrafo")
 const botoes = document.querySelectorAll(".btn-enviar")
+const formularios = document.querySelectorAll(".form-temp")
 
-botoes.forEach((botao, index) => {
+formularios.forEach((formulario) => {
 
-    botao.addEventListener("click", (e) => {
+    formulario.addEventListener("submit", (e) => {
 
         e.preventDefault()
 
-        const input = inputs[index]
-        const paragrafo = paragrafos[index]
+        const input = formulario.querySelector(".valores")
+        const paragrafo = formulario.querySelector(".paragrafo")
 
-        const temperatura = Number(input.value)
+        const temperatura = parseFloat(input.value)
 
         if (input.value === "") {
 
             paragrafo.textContent = "Informe um valor!"
             paragrafo.style.color = "blue"
-            return
-        }
 
-        if (temperatura >= 90) {
+        } else if (temperatura >= 90) {
 
             paragrafo.textContent =
-            "⚠️ ATENÇÃO ⚠️ TEMPERATURA ELEVADA."
+            "⚠️ ATENÇÃO! Temperatura elevada."
 
             paragrafo.style.color = "red"
-           
+
         } else {
 
             paragrafo.textContent =
-            "Temperatura normal ✅"
+            "✅ Temperatura normal."
 
             paragrafo.style.color = "green"
-            
         }
 
     })
 
 })
+        

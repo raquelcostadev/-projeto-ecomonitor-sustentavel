@@ -1,0 +1,15 @@
+/* Celulares */
+@media (min-width: 576px){
+.navegacao-inicio{
+color: yellowgreen;
+}
+    
+
+    }
+
+/* Tablets */
+@media (min-width: 768px) {
+.navegacao-inicio {
+color: red;
+}
+}
