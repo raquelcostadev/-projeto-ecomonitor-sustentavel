@@ -1,38 +1,41 @@
-const input = document.getElementById("valor")
-const btn_enviar = document.getElementById("btn-enviar")
-const paragrafo = document.querySelector(".paragrafo")
+const inputs = document.querySelectorAll(".valores")
+const paragrafos = document.querySelectorAll(".paragrafo")
+const botoes = document.querySelectorAll(".btn-enviar")
 
+botoes.forEach((botao, index) => {
 
-function verificarTemperatura() {
+    botao.addEventListener("click", (e) => {
 
-    const temperatura = Number(input.value)
-    
-    if( input.value === ""){
-        paragrafo.textContent = "Informe um valor!"
-         paragrafo.style.color = "blue"
-           return
-    }
+        e.preventDefault()
 
-    if (temperatura > 90) {
-         paragrafo.textContent =" ⚠️ATENÇÃO ⚠️ TEMPERATURA ELEVADA."
-         paragrafo.style.color = "red"
-         paragrafo.style.fontSize= "13.5px"
+        const input = inputs[index]
+        const paragrafo = paragrafos[index]
 
-    } else {
+        const temperatura = Number(input.value)
 
-        paragrafo.textContent =
-        "Temperatura normal, pode operar a máquina normalmente.✅"
+        if (input.value === "") {
 
-        paragrafo.style.color = "green"
-    }
-}
+            paragrafo.textContent = "Informe um valor!"
+            paragrafo.style.color = "blue"
+            return
+        }
 
-btn_enviar.addEventListener("click", (e) => {
+        if (temperatura >= 90) {
 
-    e.preventDefault()
+            paragrafo.textContent =
+            "⚠️ ATENÇÃO ⚠️ TEMPERATURA ELEVADA."
 
-    btn_enviar.style.color = "red"
+            paragrafo.style.color = "red"
+           
+        } else {
 
-    verificarTemperatura()
+            paragrafo.textContent =
+            "Temperatura normal ✅"
+
+            paragrafo.style.color = "green"
+            
+        }
+
+    })
+
 })
-
