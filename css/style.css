@@ -4,25 +4,30 @@
 display: flex;
 align-items: center;
 justify-content: space-around;
-background: #3498db;
+background: #ccc;
 margin-bottom: 50px;
 flex-wrap: wrap;
 }
 .navegacao-inicio a{
-color: aliceblue;
+color: oklch(38% 0.189 293.745);
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
 font-size: 1.8rem;
 text-decoration: none;
 cursor: pointer;
+transition: 0.3s;
 }
 .navegacao-inicio a:hover{
-color: wheat;
+color: green;
+border-bottom: 3px solid white;
+font-weight: bold;
+
 }
 
 .logo_index{
 display: block;
 margin: auto;
-  width: 420px;
+  width: 130px;
     object-fit: cover;
 
 }
