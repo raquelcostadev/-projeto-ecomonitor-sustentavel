@@ -1,6 +1,9 @@
-
-
+/* erika começou aqui*/
 .navegacao-inicio {
+position: absolute; 
+top: 0;            
+left: 0;           
+width: 100%;       
 display: flex;
 align-items: center;
 justify-content: space-around;
@@ -8,6 +11,7 @@ background: #ccc;
 margin-bottom: 50px;
 flex-wrap: wrap;
 }
+
 .navegacao-inicio a{
 color: oklch(38% 0.189 293.745);
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -47,7 +51,7 @@ height: 30px;
 text-align: center;
 }
 .btn-enviar{
-background-color: #f1c40f;
+background-color: #f7f308;
 border-radius: 5px;
 width: 70px; 
 height: 30px;
@@ -142,14 +146,13 @@ li{
 list-style: none;
 margin: 10px 5px 5px 5px;
 font-size: 1.3rem;
-
-
-
 }
+/* erika terminou aqui*/
 
 
 
-/* erika ate aqui*/
+/* raquel começou aqui*/
+
 * {
    margin: 0;
     padding: 0;
@@ -275,4 +278,161 @@ footer {
     text-align: center;
     margin-top: 60px;
     color: #95a5a6;
-    font-size: 0.85rem;}
+    font-size: 0.85rem;
+}
+/* raquel terminou aqui*/
+
+/* raquel começou aqui pt 2 */
+.missao-valores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f9fbfd;
+    text-align: center;
+}
+.missao-valores p {
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 40px;
+}
+.missao-valores h2, 
+.missao-valores h3 {
+    color: #4a148c; 
+    margin-bottom: 20px;
+}
+/* Checks verdes da página sobre */
+.listasobre li span {
+    color: #28a745; 
+    font-weight: bold;
+    margin-right: 8px; 
+}
+.listaacoes li span{
+    color: #28a745; 
+    font-weight: bold; 
+    margin-right: 8px;
+}
+
+article {
+    max-width: 900px;
+    margin: 50px auto 20px auto; 
+    text-align: center;
+    padding: 0 20px;
+}
+
+article h2 {
+    color: #4a148c; 
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/* Container principal da lista de ações */
+.listaacoes {
+    padding: 20px 20px 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.listaacoes div {
+    max-width: 850px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Título secundário (Os principais benefícios...) */
+.listaacoes h2 {
+    color: #4a148c;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Organização da lista */
+.listaacoes ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0 auto;
+    text-align: left; 
+}
+
+.listaacoes li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #2c3e50; 
+    margin-bottom: 20px; 
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Container que segura todos os cards da equipe */
+.cardequipe {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto 50px auto;
+}
+
+/* Estilo individual de cada Card */
+.cardequipe > div {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px 20px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse por cima do card */
+.cardequipe > div:hover {
+    transform: translateY(-5px);
+}
+
+/* A imagem da equipe */
+.imgequipe {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: none; 
+    margin-bottom: 20px;
+}
+
+/* Nomes das integrantes */
+.cardequipe p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+/* O botão com o novo estilo */
+.mostrarfoto {
+    background: transparent;
+    color: #4a148c; 
+    border: 2px solid #4a148c; 
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 6px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto; 
+}
+
+/* Efeito ao passar o mouse no botão */
+.mostrarfoto:hover {
+    background-color: #4a148c;
+    color: #ffffff; 
+}
+/* raquel terminou aqui pt 2 */
