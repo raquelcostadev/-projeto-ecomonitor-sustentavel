@@ -20,6 +20,7 @@ font-size: 1.8rem;
 text-decoration: none;
 cursor: pointer;
 transition: 0.3s;
+
 }
 .navegacao-inicio a:hover{
 color: green;
@@ -57,8 +58,18 @@ width: 70px;
 height: 30px;
 transition: transform 0.3s ease;
 border: 1px solid #e1e8ed;
-
+color: black;
+font-size: 18px;
+cursor: pointer;
 }
+
+@media(max-width:400px){
+  h2{color: #28a745;
+    font-size: 1.2rem;
+}
+}
+
+
 
 .btn-simulador{
  display: flex;
@@ -69,12 +80,19 @@ background-color: #f7f308;
 border-radius: 10px;
 margin: auto auto 0;
 margin-top: 20px;
-width:200px; 
-height: 60px;
+width:170px; 
+height: 40px;
 transition: transform 0.3s ease;
 border: 1px solid #e1e8ed;
 cursor: pointer;
-font-size: 1rem;}
+font-size: 14.5px;
+text-decoration: none;
+color: black;
+font-weight: bold;}
+
+.btn-simulador:hover{
+background: #2ecc71;
+}
 
 /*pagina parceiros*/
 
@@ -145,11 +163,10 @@ h1{color: #2c3e50;
     font-size: 2.2rem;
     margin-bottom: 10px;
 } h2,h3{
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     color: oklch(38% 0.189 293.745);
-     line-height: 1.7;
-   
-}p{
+     line-height: 1.7;}
+    p{
     font-size: 1.4rem;
     line-height: 1.7;
 }
@@ -184,6 +201,8 @@ body {
    display: flex;
     flex-direction: column;
     min-height: 100vh;
+flex-wrap: wrap;
+  
 }
 
 
@@ -205,6 +224,7 @@ main{
 flex: 1;
 margin-top: -50px;
 }
+
 
 
 .dashboard-container {
@@ -382,14 +402,15 @@ article h2 {
     margin-bottom: 20px; 
     display: flex;
     align-items: flex-start;
+    text-align: center;
 }
 
 .listabeneficios ul {
 
-  padding-left: 160px;
+  padding-left: 60px;
 }
 .listabeneficios li {
-  text-align: justify;
+  text-align: center;
 }
 
 /* Container que segura todos os cards da equipe */
