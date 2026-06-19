@@ -89,6 +89,10 @@ cursor: pointer;
     font-size: 14px;
     margin-top: 120px;
 }
+ article h2{
+font-size: 16px;
+margin-top: 50px;
+}
 p{
 font-size: 16px;
 }
