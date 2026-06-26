@@ -409,7 +409,7 @@ article h2 {
 .listaacoes div {
     max-width: 850px;
     width: 100%;
-    text-align: center;
+   
 }
 
 /* Título secundário (Os principais benefícios...) */
@@ -425,7 +425,7 @@ article h2 {
     list-style: none; 
     padding: 0;
     margin: 0 auto;
-    text-align: left; 
+  
 }
 
 .listaacoes li {
@@ -435,7 +435,8 @@ article h2 {
     margin-bottom: 20px; 
     display: flex;
     align-items: flex-start;
-    text-align: center;
+    text-align: left;
+    
 }
 
 .listabeneficios ul {
